@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal Khulbe</title>
+    <style>
+        body {
+            font-family: "Courier";
+            text-align: justify;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .navbar {
+            position: fixed; /* Make the navbar fixed */
+            top: 0; /* Position it at the top */
+            width: 100%; /* Make it span the entire width */
+            background-color: #f4f4f4; /* Background color */
+            z-index: 1000; /* Ensure it stays on top of other content */
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow: hidden;
+            margin: 0 250px;
+        }
+
+        .navbar li {
+            float: right;
+        }
+
+        .navbar li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #efefef;
+        }
+
+        .contact {
+            background-color: rgb(239, 239, 239);
+        }
+
+        .projects,
+        .contact_content,
+        .main {
+            margin: 0 35vh;
+        }
+
+        .contact {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .contact_content {
+            text-align: center;
+        }
+
+
+        .contact_content ul {
+            overflow: hidden;
+        }
+
+        .contact_content li a {
+            padding: 14px 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div class="navbar">
+        <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#services">Gallery</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#home">Home</a></li>
+        </ul>
+    </div>
+    <a id="home"></a>
+    <div class="main">
+        <br><br>
+        <h1>
+            Hi. I am Kunal Khulbe
+        </h1>
+        <p>App Developer and Cybersecurity Enthusiast currenty in his third year of BTech in Computer Science and
+            Engineering at Vellore Institute of Technology, Chennai. </p>
+    </div>
+    <br>
+    <div class="projects" id="projects">
+        <b>My Projects</b>
+        <ul>
+            <li>
+                <b>
+                    Expensio
+                </b>
+                [<a href="">Overhaul in progress</a>]
+            </li>
+            A personal expenses management and tracker application. This project showcases a sophisticated
+            cross-platform expense management application developed using Flutter. The app utilizes Google Cloud
+            Firestore as its backend database, ensuring efficient data storage and retrieval for users' expense tracking
+            needs. Designed with a focus on user experience and functionality, the project integrates various features
+            including detailed expense insights and graphical data representation.
+            <br><br>
+            <h4>Some of the key features include</h4>
+            <ul>
+                <li>
+                    <p>
+                        <b>Expense Insights: </b>Users can explore detailed insights into their expenditure habits,
+                        aiding them in better understanding and managing their finances effectively
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Graphical Data Representation: </b>The application offers visual plots and graphs to
+                        represent expenditure data, providing users with a clear overview of their spending patterns.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Identity and Access Management: </b>Authentication is handled using Firebase authentication
+                        and OAuth services, ensuring secure access to user accounts and protecting their personal
+                        information.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>State Management: </b>GetX framework is employed for efficient state management within the
+                        application, enhancing performance and usability
+                    </p>
+                </li>
+            </ul>
+            <br>
+            <h4>Screenshots</h4>
+            <center>
+                <i>Proposed UI <small><a href="https://dribbble.com/shots/17913062-Expense-Tracker-Application">[Credits
+                            to Faiz Shahnawaz]</a></small></i><br>
+                <img src="images/expensio_homepage.png" alt="Expensio Home Page" width="600vw" height="350vh" />&nbsp;&nbsp
+            </center>
+            <br><br>
+            <hr>
+            <br>
+            <li>
+                <b>
+                    Expensio
+                </b>
+                [<a href="">Overhaul in progress</a>]
+            </li>
+            A personal expenses management and tracker application. This project showcases a sophisticated
+            cross-platform expense management application developed using Flutter. The app utilizes Google Cloud
+            Firestore as its backend database, ensuring efficient data storage and retrieval for users' expense tracking
+            needs. Designed with a focus on user experience and functionality, the project integrates various features
+            including detailed expense insights and graphical data representation.
+            <br><br>
+            Some of the key features include <br><br>
+            <ul>
+                <li>
+                    <p>
+                        <b>Expense Insights: </b>Users can explore detailed insights into their expenditure habits,
+                        aiding them in better understanding and managing their finances effectively
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Graphical Data Representation: </b>The application offers visual plots and graphs to
+                        represent expenditure data, providing users with a clear overview of their spending patterns.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>Identity and Access Management: </b>Authentication is handled using Firebase authentication
+                        and OAuth services, ensuring secure access to user accounts and protecting their personal
+                        information.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <b>State Management: </b>GetX framework is employed for efficient state management within the
+                        application, enhancing performance and usability
+                    </p>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="contact" id="contact">
+        <div class="contact_content">
+            <ul>
+                <a href="https://www.linkedin.com/in/kunal-khulbe-4376b8221/">LinkedIn</a>&nbsp;&nbsp;
+                <a href="https://github.com/LavenderBridge">GitHub</a>&nbsp;&nbsp;
+                <a href="mailto:kunal.khulbe2@gmail.com">Email me</a>&nbsp;&nbsp;
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
