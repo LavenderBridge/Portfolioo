@@ -10,15 +10,9 @@ html {
 
 body {
     font-family: "Arial";
-    /* text-align: justify; */
-    background-color: black;
+    background-image: radial-gradient(rgb(19, 19, 19), black);
     /* background-image: radial-gradient(at top, rgb(33, 0, 33), rgb(8, 0, 8)); */
     overflow-y: auto;
-}
-
-body div {
-    /* color: rgb(111, 9, 111); */
-    color: greenyellow;
 }
 
 a {
@@ -35,7 +29,6 @@ a:hover {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    /* margin: 0, 10vw; */
 }
 
 .slide {
@@ -46,83 +39,21 @@ a:hover {
 }
 
 .mainHead {
-    margin-top: 20vh;
+    margin-top: 6vh;
     margin-bottom: 0px;
     /* margin-right: 50px; */
     font-family: 'Arial';
-    font-size: 200px;
+    font-size: 250px;
     letter-spacing: -8px;
-    line-height: 160px;
+    line-height: 220px;
     padding: 0 100px;
     vertical-align: middle;
+    color: greenyellow;
+    font-family: "Lobster", "Arial";
 
     /* text-shadow: 0 0 32px rgb(79, 0, 79); */
     /* text-shadow: 0 0 32px rgb(91, 91, 0); */
     text-shadow: 0 0 32px rgb(60, 90, 0);
-
-    /* animation: text-flicker 2s linear infinite; */
-}
-
-@keyframes text-flicker {
-    0% {
-        opacity: 0.1;
-        text-shadow: 0px 0px 29px purple;
-    }
-
-    2% {
-        opacity: 1;
-        text-shadow: 0px 0px 29px purple;
-    }
-
-    8% {
-        opacity: 0.1;
-        text-shadow: 0px 0px 29px purple;
-    }
-
-    9% {
-        opacity: 1;
-        text-shadow: 0px 0px 29px purple;
-    }
-
-    12% {
-        opacity: 0.1;
-        text-shadow: 0px 0px purple;
-    }
-
-    20% {
-        opacity: 1;
-        text-shadow: 0px 0px 29px purple
-    }
-
-    25% {
-        opacity: 0.3;
-        text-shadow: 0px 0px 29px purple
-    }
-
-    30% {
-        opacity: 1;
-        text-shadow: 0px 0px 29px purple
-    }
-
-    70% {
-        opacity: 0.7;
-        text-shadow: 0px 0px 29px purple
-    }
-
-    72% {
-        opacity: 0.2;
-        text-shadow: 0px 0px 29px purple
-    }
-
-    77% {
-        opacity: .9;
-        text-shadow: 0px 0px 29px purple
-    }
-
-    100% {
-        opacity: .9;
-        text-shadow: 0px 0px 29px purple
-    }
 }
 
 .mainSubHead {
@@ -132,34 +63,64 @@ a:hover {
     /* Add some margin between mainHead and mainSubHead */
 }
 
-.head-2 {
-    font-size: 90px;
-    line-height: 95px;
+.head-2,
+.head-3
+.head-4 {
+    font-size: 70px;
+    line-height: 70px;
     padding-right: 35vw;
+    font-weight: bolder;
 }
+
+.head-2 {
+    /* animation: fadeInLeft 3s ease forwards; */
+    padding-right: 20vw;
+    color: rgba(0, 0, 128, 0.648);
+    /* text-shadow: 0 0 32px rgb(221, 185, 255); */
+    text-shadow: 0 0 32px rgb(210, 210, 255);
+
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 
 .content-2 {
-    padding-right: 35vw;
-    text-align: left;
-    color: white;
+    padding-right: 18vw;
+    /* padding-right: 0; */
+    text-align: justify;
+    color: grey;
+    font-size: 20px;
+    /* opacity: 0; */
 }
 
+.mockup1 {
+    padding-right: 7vw;
+}
+
+.content-2-marquee-reverse li,
 .content-2-marquee li {
-    font-size: 30px;
+    font-size: 15px;
     display: inline;
     padding: 0 10px;
+    color: rgb(75, 75, 75);
 }
 
-.content-2-marquee-reverse li {
-    font-size: 30px;
-    display: inline;
-    padding: 0 10px;
-}
-
-.content-main {
+.content-main,
+.project-main {
     padding: 100px 100px;
-    font-size: 25px;
-    text-align: left;
+    font-size: 35px;
+    background-color: #f8f9fd;
     /* margin-right: 30vw; */
 }
 
@@ -168,14 +129,14 @@ a:hover {
 }
 
 .navbar {
-    background-color: black;
+    background-color: transparent;
     color: #fff;
     padding: 10px 0;
-    position: fixed;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    /* z-index: 1000; */
     /* Ensures the navbar is above other content */
     padding-top: 30px;
 
@@ -191,7 +152,7 @@ a:hover {
 }
 
 .logo {
-    color: #fff;
+    color: rgb(94, 141, 0);
     text-decoration: none;
     font-size: 24px;
 }
@@ -207,7 +168,8 @@ a:hover {
     margin-left: 20px;
 }
 
-.nav-links li a {
+.nav-links li a,
+.logo a {
     /* color: #fff; */
     color: rgb(94, 141, 0);
     text-decoration: none;
@@ -215,5 +177,24 @@ a:hover {
 
 .nav-links li a:hover {
     color: yellowgreen;
-    text-decoration: underline;
+    text-decoration: none;
+    text-shadow: 0 0 32px rgb(108, 162, 0);
+}
+
+.project-main {
+    background-color: greenyellow;
+}
+
+.project-title {
+    font-size: 35px;
+}
+
+.project-content {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.project-table td {
+    padding: 0 70px;
 }
